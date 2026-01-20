@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
+</head>
+<body>
+    <div class="p-12">
+        <button onclick="toggleDrawer()" class="bg-indigo-500 px-8 py-2.5 rounded text-white font-meidium hover:bg-indigo-600">
+            <i class="ri-arrow-right-line"></i>
+            Toggle Drawer
+        </button>
+    </div>
+    <aside style="width: 0; transition: 0.3s;" id="drawer" class="bg-white overflow-auto h-full fixed top-0 right-0 shadow-xl border-l border-l-gray-200 z-[20000]">
+        <div class="flex items-center justify-between px-6 py-3 border-b border-b-gray-100">
+            <h1 class="text-lg font-semibold">Register now</h1>
+            <i onclick="toggleDrawer()" class="ri-close-circle-line text-gray-500"></i>
+        </div>
+        <div class="p-8">
+            <form class="space-y-6">
+                <div class="flex flex-col gap-2">
+                    <label class="text-[17px] font-medium text-gray-600">Firstname</label>
+                    <input class="border border-gray-300 p-3 rounded" placeholder="Firstname goes here" />
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label class="text-[17px] font-medium text-gray-600">Lastname</label>
+                    <input class="border border-gray-300 p-3 rounded" placeholder="Lastname goes here" />
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label class="text-[17px] font-medium text-gray-600">Email</label>
+                    <input class="border border-gray-300 p-3 rounded" placeholder="Email id" />
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label class="text-[17px] font-medium text-gray-600">Password</label>
+                    <input class="border border-gray-300 p-3 rounded" placeholder="Password" />
+                </div>
+
+                <button class="bg-rose-500 px-8 py-3 rounded text-white font-medium hover:bg-rose-600">
+                    <i class="ri-arrow-right-line"></i>
+                    Sign up
+                </button>
+            </form>
+        </div>
+    </aside>
+    <script src="js/script.js"></script>
+</body>
+</html>
